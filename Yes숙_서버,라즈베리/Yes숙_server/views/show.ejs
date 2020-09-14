@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>DB에서 데이터 가져오기</h1>
+        
+        <table>
+            <% for (let data of results) { %>
+                <tr>
+                    <td><%= data.id %></td>
+                    <td><%= data.name %></td>
+                    <td><%= data.age %></td>
+                </tr>
+            <% } %>
+        </table>
+    </body>
+</html>
+

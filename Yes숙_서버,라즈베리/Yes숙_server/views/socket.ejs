@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io('localhost:3000')
+            socket.on('pushNotification',function(data){
+                console.log(data)
+                Push.create("Hello world",{
+                    body:data.msg,
+                    icon:"/icon.png",
+                    timeout:4000,
+                    onClick:function(){
+                        window.focus()
+                        this.close()
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

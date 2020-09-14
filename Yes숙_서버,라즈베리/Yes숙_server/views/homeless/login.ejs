@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>로그인</h1>
+<hr>
+
+<form action="/login/FVlogin" method="POST" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td><input type="text" name="name" placeholder="이름"></td>
+        </tr>
+        <tr>
+            <td><input type="password" name="year" placeholder="생년월일"></td>
+        </tr>
+    </table>
+    <input type="file" name="voice">음성<br>
+    <input type="file" name="face">사진<br>
+    <input type="submit" value="전송하기">
+</form>
+</body>
+</html>
